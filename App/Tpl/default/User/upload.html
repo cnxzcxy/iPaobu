@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>文件上传-爱跑步iPaobu, 显示正确的运动轨迹记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<include file="./App/Tpl/default/header.html" />
+	<script>
+function checkForm(){
+	var str = document.all.gps_file.value;
+	var pos = str.lastIndexOf(".");
+	var lastname = str.substring(pos,str.length);
+	lastname = lastname.toLowerCase();
+	console.log(lastname);
+	if (lastname == '.kml' || lastname == '.gpx' || lastname == '.tcx'){
+		$j("#gps_file_type").val(lastname);
+		return true;
+	}else{
+		alert('您选择的文件不是kml gpx tcx类型，请重新选择!');
+		return false;
+//		return true;
+	}
+}
+
+	</script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+<include file="./App/Tpl/default/navigation.html" />
+
+<div class="container">
+
+  <div class="content">
+    <div class="page-header">
+      <h1>文件上传 <small>爱跑步-RunKeeper轨迹纠偏</small></h1>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2></h2></span>
+            <form  id="form1" METHOD=POST action="__URL__/doUpload" enctype="multipart/form-data" onsubmit="return checkForm()">
+        <fieldset> 
+          <legend>请输入<span id="ajax_load" style="display:none"><img src="__PUBLIC__/image/loading.gif" width=20 height=20></span></legend>
+          <div class="clearfix">
+            <label for="xlInput">轨迹名字</label>
+            <div class="input">
+              <input class="xlarge" id="name" name="name" size="30" type="text" placeholder="比如20111111光棍纪念骑行">
+            </div>
+          </div><!-- /clearfix -->
+          <div class="clearfix">
+            <label for="fileInput">选择文件</label>
+            <div class="input">
+              <input class="input-file" id="gps_file" name="gps_file" type="file">
+              <input type="hidden" id="gps_file_type" NAME="gps_file_type" value=''>
+            </div>
+          </div>
+           </fieldset>
+          <fieldset>
+          <div class="clearfix">
+            <label id="optionsCheckboxes">必选</label>
+            <div class="input">
+              <ul class="inputs-list">
+                <li>只能选择gpx或kml文件
+                  <!-- <label>
+                    <input type="checkbox" name="optionsCheckboxes" value="option1">
+                    <span>记住我</span>
+                  </label> -->
+                </li>
+              </ul> 
+              <span class="help-block">
+                <strong>提示:</strong> 暂时不能设置保密，您上传的轨迹将会被其他网友看到.
+              </span>
+            </div>
+          </div><!-- /clearfix -->
+          <div class="clearfix">
+            <div class="input">
+              <h5><span>{$sinaWeibo}</span><span style="margin-left:10px">{$renren}</span></h5>
+            </div>
+          </div>
+    
+          <div class="actions">
+            <input type="submit" class="btn primary" value="保存" >&nbsp;<button type="reset" class="btn">重置</button>
+          </div>
+        </fieldset>
+      </form>
+         </div>
+      </div>
+      <div class="span4">
+        <h3>登录后有什么不同？</h3>
+        <div class="row">
+          <div style="margin-left:10px;">
+            <ul>
+              <li style="margin:2px 0 2px 0">可以上传自己的轨迹</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+            </ul>
+          </div>
+        </div>
+      </div>      
+    </div>
+    
+    
+  </div>
+<script>
+//$j("#name").focus();
+</script>
+<include file="./App/Tpl/default/footer.html" />
+
+</div> <!-- /container -->
+
+  </body>
+</html>

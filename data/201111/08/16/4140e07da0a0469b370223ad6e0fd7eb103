@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="device_list_1317172393">
+<Table>
+<Row>
+<Cell><Data ss:Type="String">单位</Data></Cell>
+<Cell><Data ss:Type="String">车牌号</Data></Cell>
+<Cell><Data ss:Type="String">类型</Data></Cell>
+<Cell><Data ss:Type="String">设备号</Data></Cell>
+<Cell><Data ss:Type="String">车架号</Data></Cell>
+<Cell><Data ss:Type="String">备注</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PH1228</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29921593</Data></Cell>
+<Cell><Data ss:Type="String">B1022743</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;登封</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA5999</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29921348</Data></Cell>
+<Cell><Data ss:Type="String">002082</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店市</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1085</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29939581</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC56A125680</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1093</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29919936</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC56A125677</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA1120</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29921390</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDH4A301644</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1289</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942539</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS926A125754</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA7817</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941915</Data></Cell>
+<Cell><Data ss:Type="String">LFZ679JA15A011938</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA7779</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941920</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC35A110464</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;安阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ7030</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942566</Data></Cell>
+<Cell><Data ss:Type="String">LZYTDTC6XA1030951</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;洛阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC8381</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941888</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDHS76007392</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;临颍</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD8688</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942673</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6871012082</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;新乡</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA8135</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942699</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDHX56000077</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;兰考</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PK9866</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942572</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6091015884</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;焦作</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P07697</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942576</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDH83A080523</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ5046</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942543</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC28A1025967</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1088</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942555</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC36A125788</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1099</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941874</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC86A125673</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA9682</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942660</Data></Cell>
+<Cell><Data ss:Type="String">LFZ679JAX5A012411</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PL6566</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942664</Data></Cell>
+<Cell><Data ss:Type="String">A1032854</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ5028</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941898</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC26A1025966</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P05480</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942551</Data></Cell>
+<Cell><Data ss:Type="String">3A0077610</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P3Z041</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942557</Data></Cell>
+<Cell><Data ss:Type="String">LGC17AC21B6004064</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;上蔡</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD8833</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941914</Data></Cell>
+<Cell><Data ss:Type="String">LNVH2SBD96V500992</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;平顶山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P1Z306</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942567</Data></Cell>
+<Cell><Data ss:Type="String">B1009183</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;濮阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P1Z705</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942663</Data></Cell>
+<Cell><Data ss:Type="String">LZYTFTC25B1012690</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;禹州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB9607</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941890</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC36A12405</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA9239</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942541</Data></Cell>
+<Cell><Data ss:Type="String">LF2679JA45A013537</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB1401</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942579</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC05A123141</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P04018</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942578</Data></Cell>
+<Cell><Data ss:Type="String">LJ8ZR5E130303306</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;平顶山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD8808</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942549</Data></Cell>
+<Cell><Data ss:Type="String">LNVR2SBJ25V901180</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;平顶山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P08666</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942547</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6591074102</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;信阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA1816</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941879</Data></Cell>
+<Cell><Data ss:Type="String">302920</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD6195</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941918</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS9X4A206885</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB8337</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942670</Data></Cell>
+<Cell><Data ss:Type="String">LNVW3SBJ46V200108</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1079</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29921532</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC36A125676</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB9957</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946651</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS936A124578</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD6360</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946621</Data></Cell>
+<Cell><Data ss:Type="String">LHVK1BA307HL14694</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;信阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB1668</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942211</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CSC3SA123151</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC3660</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942207</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS907A121087</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;平顶山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC8888</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946630</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS916A124577</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD8857</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946644</Data></Cell>
+<Cell><Data ss:Type="String">LNVH2SBD15V700134</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;平顶山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P09696</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946505</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6081024048</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;潢川</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PJ1868</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946508</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC65A1000253</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB9786</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946625</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS926A124569</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1292</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946608</Data></Cell>
+<Cell><Data ss:Type="String">LNVU1CA396VN01639</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;商城</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1728</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29941881</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDH176000911</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;正阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA0990</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942565</Data></Cell>
+<Cell><Data ss:Type="String">LGC1AHDH63A081668</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB8861</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946610</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6761004781</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;信阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1277</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946602</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS906A125719</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;洛阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ8091</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946600</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1DSA0BA556698</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA8988</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946614</Data></Cell>
+<Cell><Data ss:Type="String">0405400079</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;新密</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PG2166</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946499</Data></Cell>
+<Cell><Data ss:Type="String">LZYTDT6491023665</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;永城</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB9757</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946624</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS946A124573</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC7931</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946616</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS9X7C001270</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PF9888</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942548</Data></Cell>
+<Cell><Data ss:Type="String">LZYTDTD6581026301</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;民权</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB0628</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942208</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS915A122228</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB1079</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942210</Data></Cell>
+<Cell><Data ss:Type="String">00067</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC0971</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946504</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS946A125447</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;淮北</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P05037</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946650</Data></Cell>
+<Cell><Data ss:Type="String">076575</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC7659</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946512</Data></Cell>
+<Cell><Data ss:Type="String">LKLR1CS917C001142</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;焦作</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PD8868</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29942221</Data></Cell>
+<Cell><Data ss:Type="String">LZYTBTD6671015635</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;洛阳</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PF3209</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946480</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6791003912</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;固始</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB0989</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946485</Data></Cell>
+<Cell><Data ss:Type="String">LNVW3SBJ25VN00065</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;漯河</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫P5Z369</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947785</Data></Cell>
+<Cell><Data ss:Type="String">LZYTDTCG3B1026547</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA1986</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29939584</Data></Cell>
+<Cell><Data ss:Type="String">303366</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;许昌</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PQ9696</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946652</Data></Cell>
+<Cell><Data ss:Type="String">LZYTETC6291016693</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;光山</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ8988</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947780</Data></Cell>
+<Cell><Data ss:Type="String">LZYTFTC22B1026577</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;驻马店</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PA3066</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946934</Data></Cell>
+<Cell><Data ss:Type="String">LZYTDTC68B1025622</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;林州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PZ7759</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947613</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATE62A1041674</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;宁陵</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PE9996</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947495</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF6181002292</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PC1532</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29948050</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF6561007556</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PB9969</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29948080</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF6X61002160</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">公车大巴</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947485</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF69B1019977</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">公车大巴</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29947584</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF60B109978</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+<Row>
+<Cell><Data ss:Type="String">三公司</Data></Cell>
+<Cell><Data ss:Type="String">豫PE9998</Data></Cell>
+<Cell><Data ss:Type="String">客车</Data></Cell>
+<Cell><Data ss:Type="String">29946842</Data></Cell>
+<Cell><Data ss:Type="String">LZYTATF6X81002291</Data></Cell>
+<Cell><Data ss:Type="String">周口&mdash;&mdash;郑州</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

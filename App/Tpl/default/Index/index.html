@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>爱跑步iPaobu, 显示正确的运动轨迹记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<include file="./App/Tpl/default/header.html" />
+	<script>
+	function gmap(){
+		var pic = $j("#home_map_pic");
+		var map = '__PUBLIC__/image/gmap.jpg';
+		pic.attr("src", map);
+	}
+
+	function mapabc(){
+		var pic = $j("#home_map_pic");
+		var map = '__PUBLIC__/image/mapabc.jpg';
+		pic.attr("src", map);
+	}
+
+	</script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+<include file="./App/Tpl/default/navigation.html" />
+
+<div class="container">
+
+  <div class="content">
+    <div class="page-header">
+      <h1>爱跑步 <small>RunKeeper轨迹纠偏</small></h1>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2>效果图</h2></span>
+          <span style="margin:0 0 0 10px">
+            <button class="btn primary" onclick="gmap();">默认</button></span>
+            <span style="margin:0 0 0 10px">
+            <button class="btn info" onclick="mapabc();">纠偏</button></span>
+         </div>
+         <div class="row">
+           <div id="home_pic" style="margin:10px 34px 0 10px;border-style:groove;border-width:thin">
+              <img id="home_map_pic" style="padding:2px" class="thumbnail" src="__PUBLIC__/image/mapabc.jpg" height=358 width=550>
+           </div>
+         </div>
+         <div class="row">
+           <div style="margin:10px 0 0 10px">
+            <h2>欢迎来到爱跑步iPaobu。</h2>
+            <p>众所周知，Google Map在我们国家有位置偏移，那么通过各种软件记录出来的运动轨迹也有很大的偏移。</p>
+            <p>比如说在水上跑步？在河里骑车？</p>
+            <p>通过爱跑步iPaobu，可以纠正您在运动中发生偏移的轨迹线路。</p>
+            <p>注:需要kml格式轨迹文件 (<a href="__APP__/Help#HowToGetKml">如何获得kml轨迹?</a>)</p>
+          </div>
+         </div>
+      </div>
+      <div class="span4">
+        <h3>最新上传</h3>
+        <div class="row">
+          <div style="margin-left:10px;">
+          <?php
+		foreach ($data as $key=>$value){
+			$url = '<a href="__APP__/Map/view/id/'.base64_encode($value['fid']).'"> 查看 </a>';
+			echo "<p>".$value['username']." 在< ".date("Y-m-d H:i:s",$value['createtime'])." >上传了新的轨迹< ".$url." ></p>";
+
+		}
+
+		?>
+    </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    
+  </div>
+<include file="./App/Tpl/default/footer.html" />
+
+</div> <!-- /container -->
+
+  </body>
+</html>

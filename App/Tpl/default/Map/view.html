@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$name}-查看地图-爱跑步iPaobu, 显示正确的运动轨迹记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<include file="./App/Tpl/default/header.html" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+<include file="./App/Tpl/default/navigation.html" />
+
+<div class="container">
+
+  <div class="content">
+    <div class="page-header">
+      <h1>轨迹查看 <small>爱跑步-RunKeeper轨迹纠偏</small></h1>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2>{$name} <small>上传时间 {$uploader.0.createtime|date="Y-m-d H:i",###}</small></h2></span>
+        </div>
+        <div class="row">
+          <span style="float:left;margin-left:10px">
+          <div id="mapObj" style="width: 580px; height: 358px"></div></span>
+        </div>
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h3>随便说两句鼓励下吧...</h3></span>
+        </div>
+        <div class="row">
+          <div id="comment" style="margin-left:10px;">
+            <!-- PingLun.La Begin -->
+            <div id="pinglunla_here"></div><a href="http://pinglun.la/" id="logo-pinglunla"></a><script type="text/javascript" src="http://pinglun.la/af2d52e3170d083355d2573e1af1af311d2117e3.js" charset="utf-8"></script>
+            <!-- PingLun.La End -->
+          </div>   
+        </div>
+      </div>
+      <div class="span4">
+        <h3>轨迹信息</h3>
+        <div class="row">
+          <div style="margin-left:10px;">
+            <ul>
+              <li style="margin:2px 0 2px 0">轨迹名字 {$name}</li>
+              <li style="margin:2px 0 2px 0">上传者ID {$uploader.0.id}</li>
+              <li style="margin:2px 0 2px 0">上传者 {$uploader.0.username}</li>
+              <li style="margin:2px 0 2px 0">上传时间 {$uploader.0.createtime|date="Y-m-d H:i",###}</li>
+              <li style="margin:2px 0 2px 0">...</li>
+            </ul>
+          </div>
+        </div>
+        <h3>分段信息</h3>
+        <div class="row">
+          <div id="track_info" style="margin-left:10px;overflow:hidden;height:190px;">正在加载...</div>
+        </div>
+      </div>      
+    </div>
+    
+    
+  </div>
+<?php
+if (IS_SAE){
+	echo '<script type="text/javascript" src="http://app.mapabc.com/apis?&t=ajaxmap&v=2.1.2&key=82934418630be75680d61dde07924d32e727e00a8851832266035f78150cbc7fab42505bdd9bf091"></script>';
+}else{
+	echo '<script type="text/javascript" src="http://app.mapabc.com/apis?&t=ajaxmap&v=2.1.2&key=f6c97a7f64063cfee7c2dc2157847204d4dbf0934a07d8c9982c71bc87e3764c1dd975217d1a2e68"></script>';
+}
+?>
+<script type="text/javascript">
+	var mapoption = new MMapOptions();
+	mapoption.zoom=10;//设置地图zoom级别
+	mapoption.toolbar=MINI; //设置工具条
+	mapoption.toolbarPos=new MPoint(0,0);
+	mapoption.overviewMap = MINIMIZE ; //设置鹰眼
+	var mapObj = new MMap("mapObj", mapoption); //地图初始化
+	var arr=new Array();//经纬度坐标数组
+
+	<?php
+	foreach ($arr as $key=>$value){
+		echo 'arr.push(new MLngLat("'.$value['x'].'","'.$value['y'].'"));';
+//		echo 'var lon = "'.$value['x'].'";';
+//		echo 'var lat = "'.$value['y'].'";';
+	}
+	?>
+	var linestyle=new MLineStyle();//创建线样式对象 
+	linestyle.thickness=3;//线的粗细度，默认为2 
+	linestyle.color=0x0000ff;//线的颜色，16进制整数，默认为0x005890（蓝色） 
+	linestyle.lineType=LINE_DASHED;//线的表现样式，LINE_SOLID，实线（默认），LINE_DASHED，虚线 
+
+	var lineopt=new MLineOptions();//构造一个名为lineopt的线选项对象 
+	lineopt.lineStyle=linestyle;//设置线的边缘风格 
+	var polyline=new MPolyline(arr,lineopt);//通过经纬度坐标数组及参数选项构建多折线对象，arr是经纬度坐档数组 
+	polyline.id="polyline101";//对象编号，也是对象的唯一标识 
+	mapObj.addOverlay(polyline,true);//向地图添加覆盖物 
+</script>
+
+<!-- ABQIAAAAcFxf02yxRUdQ-tmy4BsSORSCk0QYYwvnVoDWHd4Hkk0y5yfgChQllU8HclOSS1F3b0y4bU1NyHNEaA for ipaobu.sinaapp.com google map -->
+
+<?php
+if (IS_SAE){
+	echo '<script src="http://ditu.google.cn/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAcFxf02yxRUdQ-tmy4BsSORSCk0QYYwvnVoDWHd4Hkk0y5yfgChQllU8HclOSS1F3b0y4bU1NyHNEaA&sensor=false" type="text/javascript"></script>
+<script>';
+}else{
+	echo '<script src="http://ditu.google.cn/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAcFxf02yxRUdQ-tmy4BsSORQvC9sdSYcwnjBK0Nf5gqN3kfsG1BQ2eqR82Gu_X_HXdjLVJcD45dkz0A&sensor=false" type="text/javascript"></script>
+<script>';
+}
+?>
+
+
+//console.log(arr);
+var arr = {$arr_json};
+var lastlat = 0;
+var lastlon = 0;
+var total_distance = 0;//总距离
+var split_distance = 0;//分段计算距离
+var split = new Array();
+for(var i = 0;i< arr.length;i++){
+	console.log(arr[i]);
+	if (lastlat != 0 && lastlon != 0){
+		var distance = new GLatLng(arr[i].o_y, arr[i].o_x).distanceFrom(new GLatLng(lastlat, lastlon));
+		lastlat = arr[i].o_y;
+		lastlon = arr[i].o_x;
+		total_distance = total_distance + distance;
+		split_distance = split_distance + distance;
+		if (split_distance >= 1000){
+			var tmp_poi = {'lat': lastlat, 'lon': lastlon, 'time': arr[i].time, 'x': arr[i].x, 'y': arr[i].y};
+			split.push(tmp_poi);
+			split_distance = (split_distance - 1000);			
+		}
+	}else {	
+		lastlat = arr[i].o_y;
+		lastlon = arr[i].o_x;
+	}
+}
+function moreTrack(val){
+	if (val){
+		var track = $j("#track_info");
+		track.height('auto');
+		$j("#more_track").hide();
+		$j("#less_track").show();
+	}else {
+		var track = $j("#track_info");
+		track.height('190px');
+		$j("#more_track").show();
+		$j("#less_track").hide();
+	}
+}
+
+function mapAddMarker(text, latitude, longitude){
+  var labelOption=new MLabelOptions();//添加标注   
+  labelOption.content= text;//标注的内容   
+  labelOption.hasBorder=true;//设置标注背景是否有边框，默认为false，即没有边框   
+  labelOption.hasBackground=true;//设置标注是否有背景，默认为false，即没有背景   
+  //标注左上角相对于图片中下部的锚点。Label左上角与图片中下部重合时，记为像素坐标原点(0,0)。   
+  labelOption.labelPosition=new MPoint(0, 0);   
+  //构建一个名为markerOption的点选项对象。   
+  var markerOption = new MMarkerOptions();   
+  //标注图片或SWF的url，默认为蓝色气球图片   
+  markerOption.imageUrl="http://code.mapabc.com/images/lan_1.png";   
+  //图片锚点BOTTOM_CENTER相对于标注位置的位置   
+  markerOption.anchor=new MPoint(0,0);   
+  //设置图片相对于加点经纬度坐标的位置。九宫格位置。默认BOTTOM_CENTER代表正下方   
+  markerOption.imageAlign=BOTTOM_CENTER;   
+  //设置点的标注参数选项   
+  markerOption.labelOption=labelOption;   
+  //设置点是否为可编辑状态,rue，可以编辑；   false，不可编辑（默认）   
+  markerOption.isEditable=false;   
+  //通过经纬度坐标及参数选项确定标注信息   
+  Mmarker = new MMarker(new MLngLat( longitude, latitude),markerOption);   
+  //对象编号，也是对象的唯一标识   
+  Mmarker.id= text;   
+  //向地图添加覆盖物   
+  mapObj.addOverlay(Mmarker,true) ;
+}
+var i = 0;
+mapAddMarker('起点', arr[i].y, arr[i].x);
+var i = (arr.length - 1);
+mapAddMarker('终点', arr[i].y, arr[i].x);
+var tmp_poi = {'lat': lastlat, 'lon': lastlon, 'time': arr[i].time, 'x': arr[i].x, 'y': arr[i].y};
+split.push(tmp_poi);
+if (total_distance > 1000){
+	total_distance = (total_distance / 1000) + ' 公里';
+}else {
+	total_distance = total_distance + ' 米';
+}
+$j("#track_info").html("<li>共 " + total_distance + " </li>");
+for (var i=0;i<split.length;i++){
+	var html = $j("#track_info").html();
+	var j = i + 1;
+	var tmp_html = "<li>"+j+"公里，时间"+split[i].time+"</li>";
+	html = html + tmp_html;
+	if (j == 8){
+		tmp_html = "<p id='more_track' style='text-align:right'><a href='javascript:void(0)' onclick='moreTrack(true)'>更多</a></p>"
+		html = html + tmp_html;
+	}
+	if (i != 0 && i!= split.length){
+		mapAddMarker(j, split[i].y, split[i].x);
+	}
+	
+	$j("#track_info").html(html);
+}
+var html = $j("#track_info").html();
+var tmp_html = "<p id='less_track' style='text-align:right;display:none'><a href='javascript:void(0)' onclick='moreTrack(false)'>隐藏</a></p>"
+html = html + tmp_html;
+$j("#track_info").html(html);
+
+</script>
+<include file="./App/Tpl/default/footer.html" />
+
+</div> <!-- /container -->
+
+  </body>
+</html>

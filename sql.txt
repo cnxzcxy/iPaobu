@@ -1,0 +1,17 @@
+CREATE TABLE  `ipaobu`.`ipb_file` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`path` VARCHAR( 200 ) NOT NULL COMMENT  '文件位置',
+`userid` INT( 10 ) NOT NULL COMMENT  '上传者id',
+`createtime` INT( 10 ) NOT NULL COMMENT  '上传时间'
+) ENGINE = MYISAM COMMENT =  '用户上传gps文件信息记录'
+
+
+CREATE TABLE  `ipaobu`.`ipb_user` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`username` VARCHAR( 60 ) NOT NULL COMMENT  '用户名',
+`password` VARCHAR( 60 ) NOT NULL COMMENT  '密码',
+`email` VARCHAR( 60 ) NOT NULL COMMENT  'EMAIL',
+`sinaweiboid` VARCHAR( 60 ) NOT NULL COMMENT  '新浪微博id',
+`renrenid` VARCHAR( 60 ) NOT NULL COMMENT  '人人网id',
+`createtime` INT( 10 ) NOT NULL COMMENT  '创建时间'
+) ENGINE = MYISAM COMMENT =  '用户表'

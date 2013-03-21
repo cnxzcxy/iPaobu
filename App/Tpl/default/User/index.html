@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户-爱跑步iPaobu, 显示正确的运动轨迹记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<include file="./App/Tpl/default/header.html" />
+	<script>
+
+
+	</script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+<include file="./App/Tpl/default/navigation.html" />
+
+<div class="container">
+
+  <div class="content">
+    <div class="page-header">
+      <h1>用户 <small>爱跑步-RunKeeper轨迹纠偏</small></h1>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2>我上传的</h2></span>           
+         </div>
+       <div class="row" style="margin:10px 10px 10px 2px;">
+          <if condition="$upload">
+            <table class="bordered-table zebra-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>轨迹名字</th>
+                <th>单次里程</th>
+                <th>单次耗时</th>
+                <th>平均速度</th>
+                <th>文件类型</th>
+                <th>上传时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <foreach name="upload" item="vo">
+                <tr>
+                <td>{$vo.id}</td>
+                <td><a href="__APP__/Map/view/id/{$vo.id|base64_encode}">{$vo.name}</a></td>
+                <td>{$vo.mileage|default="未知"}</td>
+                <td>{$vo.time|default="未知"}</td>
+                <td>{$vo.speed|default="未知"}</td>
+                <td>{$vo.type}</td>
+                <td>{$vo.createtime|date="Y-m-d H:i",###}</td>
+              </tr>
+              </foreach>
+            </tbody>
+          </table>
+          <else />
+            <p>您还没有上传过呢</p>
+          </if>
+       </div>
+       <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2>我最近看过的</h2></span>           
+         </div>
+       <div class="row" style="margin:10px 10px 10px 2px;">
+          <p>暂时还没有数据</p>
+       </div>
+      </div>
+      <div class="span4">
+        <h3>个人信息</h3>
+        <div class="row">
+          <div class="span3">
+            <img src="__PUBLIC__/image/default.jpg" width=100>
+          </div>
+          <div class="span3" style="margin-left:10px;">
+            <ul>
+              <foreach name="profile" item="vo2">
+              <strong><li>ID:{$vo2.id}</li></strong>
+              <li>名字:{$vo2.username|default="未命名"}</li>
+              <li>总里程:{$vo2.mileage|default="未知"}</li>
+              <li>总时间:{$vo2.time|default="未知"}</li>
+              <li>Email:{$vo2.email}</li>
+              <li>注册时间:{$vo2.createtime|date="Y-m-d",###}</li>
+              </foreach>
+            </ul>
+          </div>
+        </div>
+      </div>      
+    </div>
+    
+    
+  </div>
+
+<include file="./App/Tpl/default/footer.html" />
+
+</div> <!-- /container -->
+
+  </body>
+</html>

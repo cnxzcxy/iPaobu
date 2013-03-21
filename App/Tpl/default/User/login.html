@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户登录-爱跑步iPaobu, 显示正确的运动轨迹记录</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<include file="./App/Tpl/default/header.html" />
+	<script>
+function checkForm(){
+	$j("#ajax_load").show();
+	var email = $j("#email").val();
+	if (!isValidEmailAddress(email)){
+		alert('Email格式不正确');
+		$j("#email").focus();
+		$j("#ajax_load").hide();
+		return false;
+	}
+	var password1 = $j("#password").val();
+	$j.ajax({
+	   type: "POST",
+   	   url: "__URL__/doLogin",
+	   data: "password=" + password1 + "&email=" + email,
+	   success: function(response){
+		console.log(response);
+		if (response == 1){
+			alert('登录成功，即将跳转');
+			window.location.href="__APP__/User";
+		}else{
+			alert('email或密码错误，请修改');
+			$j("#email").focus();
+			$j("#ajax_load").hide();			
+		}
+	   }
+	});
+	return false;
+	
+}
+
+	</script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+<include file="./App/Tpl/default/navigation.html" />
+
+<div class="container">
+
+  <div class="content">
+    <div class="page-header">
+      <h1>登录 <small>爱跑步-RunKeeper轨迹纠偏</small></h1>
+    </div>
+    <div class="row">
+      <div class="span10">
+        <div class="row">
+          <span style="float:left;margin-left:20px">
+            <h2></h2></span>
+            <form>
+        <fieldset> 
+          <legend>请输入<span id="ajax_load" style="display:none"><img src="__PUBLIC__/image/loading.gif" width=20 height=20></span></legend>
+          <div class="clearfix">
+            <label for="xlInput">Email</label>
+            <div class="input">
+              <input class="xlarge" id="email" name="email" size="30" type="text" placeholder="abc@sina.com">
+            </div>
+          </div><!-- /clearfix -->
+          <div class="clearfix">
+            <label for="xlInput">密码</label>
+            <div class="input">
+              <input class="xlarge" id="password" name="password" size="30" type="password" placeholder="123456">
+            </div>
+          </div><!-- /clearfix -->
+           </fieldset>
+          <fieldset>
+          <div class="clearfix">
+            <label id="optionsCheckboxes">可选</label>
+            <div class="input">
+              <ul class="inputs-list">
+                <li>
+                  <label>
+                    <input type="checkbox" name="optionsCheckboxes" value="option1">
+                    <span>记住我</span>
+                  </label>
+                </li>
+              </ul>
+              <span class="help-block">
+                <strong>提示:</strong> 如果选择记住我，那么您下次打开本站将是直接登录状态.
+              </span>
+            </div>
+          </div><!-- /clearfix -->
+          <div class="clearfix">
+            <div class="input">
+              <h5><span>{$sinaWeibo}</span><span style="margin-left:10px">{$renren}</span></h5>
+            </div>
+          </div>
+    
+          <div class="actions">
+            <input type="submit" class="btn primary" value="登录" onclick="checkForm();return false;">&nbsp;<button type="reset" class="btn">重置</button>
+          </div>
+        </fieldset>
+      </form>
+         </div>
+      </div>
+      <div class="span4">
+        <h3>登录后有什么不同？</h3>
+        <div class="row">
+          <div style="margin-left:10px;">
+            <ul>
+              <li style="margin:2px 0 2px 0">可以上传自己的轨迹</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+              <li style="margin:2px 0 2px 0">...</li>
+            </ul>
+          </div>
+        </div>
+      </div>      
+    </div>
+    
+    
+  </div>
+<script>
+$j("#email").focus();
+</script>
+<include file="./App/Tpl/default/footer.html" />
+
+</div> <!-- /container -->
+
+  </body>
+</html>

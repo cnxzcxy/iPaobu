@@ -1,0 +1,44 @@
+    <div class="topbar" data-dropdown="dropdown">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="__APP__/">爱跑步</a>
+          <ul class="nav">
+            <li <if condition="strtoupper($current_module) eq 'INDEX' "> class="active" </if>><a href="__APP__/">首页</a></li>
+            <li <if condition="strtoupper($current_module) eq 'USER' "> class="active" </if>><a href="__APP__/User">用户</a></li>
+            <li <if condition="strtoupper($current_module) eq 'MAP' "> class="active" </if>><a href="__APP__/Map">地图</a></li>
+            <li  <if condition="strtoupper($current_action) eq 'UPLOAD' "> class="active" </if>><a href="__APP__/User/upload">上传</a></li>
+            <li <if condition="strtoupper($current_module) eq 'HELP' "> class="active" </if>><a href="__APP__/Help">帮助</a></li>
+          </ul>
+          <form class="pull-left" action="">
+            <input type="text" style="width:160px" placeholder="Search">
+          </form>
+          <if condition="($username)" >
+            <ul class="nav secondary-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                  <span style="float:left"><img src="{$avator|default="__PUBLIC__/image/default.jpg"}" width=23 height=23></span>
+                  <span style="margin-left:5px;">{$username}</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="__APP__/User/profile">个人信息</a></li>
+                  <li><a href="__APP__/User">我的轨迹</a></li>
+                  <li><a href="__APP__/User/upload">上传轨迹</a></li>
+                  <li class="divider"></li>
+                  <li><a href="__APP__/User/logout">退出登录</a></li>
+                </ul>
+              </li>
+            </ul>
+          <else />
+            <ul class="nav secondary-nav">
+              <li><a href="__APP__/User/login">登录</a></li>
+              <li><a href="__APP__/User/register">注册</a></li>
+            </ul>
+            <!-- <form action="" class="pull-right">
+              <input class="input-small" type="text" placeholder="Email">
+              <input class="input-small" type="password" placeholder="密码">
+              <button class="btn" type="submit">登录</button>
+              <span style="margin-left:2px"><a href="__APP__/User/register">注册</a></span>
+            </form> -->
+          </if>
+        </div>
+      </div>
+    </div>
